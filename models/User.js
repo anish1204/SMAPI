@@ -12,7 +12,12 @@ const UserSchema = new mongoose.Schema({
     password:{
         type:String,
         required:true,
-    }
+    },
+    city:{
+        type:String,
+        max:50
+    },
+    
     // profilePicture:{
     //     type:String,
     //     default:""
