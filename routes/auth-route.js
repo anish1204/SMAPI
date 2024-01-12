@@ -7,9 +7,9 @@ const router = express.Router();
 //body parser wala ekk yaad rakhna
 
 
-router.get('/register',bodyParser.json(), (req, res) => {
+router.post('/register',bodyParser.json(),async (req, res) => {
     try{
-        const newUser =  new User({
+        const newUser = await new User({
             username:req.body.username,
             email:req.body.email,
             password:req.body.password,

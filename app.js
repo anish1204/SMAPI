@@ -20,10 +20,3 @@ app.listen(5000,()=>{
     console.log('Server is Ruuing');
 })
 
-app.get('/user',(req,res)=>{
-    //req.body({username,email,password});
-    res.send('hello world')
-})
-app.get('/user',(req,res)=>{
-    res.send('User Page here')
-})
