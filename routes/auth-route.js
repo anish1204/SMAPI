@@ -15,10 +15,9 @@ router.post('/register',bodyParser.json(),async (req, res) => {
             password:req.body.password,
             
         })
-        res.send('Hello world');
         const user = newUser.save();
-        res.status(200).status(user)
-        console.log(req.body.email);
+        res.status(200).json('user added');
+        //console.log(req.body.email);
     }
     catch(err)
     {
